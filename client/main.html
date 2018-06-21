@@ -2,24 +2,33 @@
   <title>rede-hike</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<template name="Inicio">
 
-  {{> hello}}
-  {{> info}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <h1>Organic Community</h1>
+  <p>Find people who also loves Organics</p>
+  <p>Follow Places</p>
+  <p>Follow your friends</p>
+  <p> <a href="#">Link</a></p>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="Sobre">
+
+  <h1>Sobre</h1>
+
+  <h2>Nossa Visão</h2>
+
+  <h2>Nossa Visão</h2>
+
 </template>
+
+<template name ="Cabecalho">
+  <a href="/">Inicio</a>
+  <a href="/sobre">Sobre</a>  
+</template>
+
+<template name="LayoutPrincipal">
+  {{> Cabecalho}}
+  {{> Template.dynamic template=main}}
+
+</template>
+
